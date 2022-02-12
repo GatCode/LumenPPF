@@ -78,9 +78,9 @@ debug_ratchet = ratchet_parts;
 // Switch on/off logos and text (except tag)
 logo_enabled=true;
 // Logo text to be printed on the reverse of the base plate
-logo_text="makr.zone";
+logo_text="GATCODE";
 // Tag to be printed on the reverse of the base plate (revision number etc.)
-logo_tag="408";
+logo_tag="8mm";
 // Open Source Hardware Logo size (set 0 to switch off)
 logo_size=18; 
 // Etching depth
@@ -131,7 +131,7 @@ do_litefeeder=false;
 /*  [ 3D Printing ] */
 
 // Standard layer height
-layer_height=0.3;
+layer_height=0.2;
 // Standard extrusion width
 extrusion_width=0.5;
 // Minimum gap between parts on the the print bed
@@ -145,7 +145,7 @@ support_grid=0;
 // Play between parts that need to snap-in (empirical)
 play=-0.05; 
 // Play on axles (empirical)
-axle_play=-0.02;
+axle_play=-0.04;
 
 // Play on the spool axle 
 spool_axle_play=axle_play;
@@ -181,9 +181,9 @@ $fs=extrusion_width;
 // Tape width
 tape_width=8; // [8:4:24]
 // Tape thickness (not incuding the embossed pockets)
-tape_thickness=0.6; // [0:0.01:1.5]
+tape_thickness=0.3; // [0:0.01:1.5]
 // Embossed pockets portruding from the underside of the tape
-tape_emboss=0; // [0:0.01:2.4] 
+tape_emboss=0.75; // [0:0.01:2.4] 
     // 250V cap = 1.6
 // Embossed pockets size, across tape, measured outside (underside of tape)
 tape_emboss_size=3.75; 
@@ -215,7 +215,7 @@ tape_inset_window_length=18;
 // Tape inset begin x
 tape_inset_begin=-74;
 // Tape inset end x
-tape_inset_end=6;
+tape_inset_end=52;
 // Tension for tape cover (ratio of tape thickness)
 tape_inset_cover_tension=0.2;
 // Radius of the tape on-ramp
@@ -227,7 +227,7 @@ tape_inset_slant=2;
 // Minimum thorn groove 
 thorn_min_groove=0.4;
 // Cover tape edge relative to the pick location
-cover_tape_edge=-1.25;
+cover_tape_edge=44.75;
 // Tape reversal blocking thorn (set 0 to switch off)
 reversal_blocking_thorn_length=0.5;
 
@@ -281,7 +281,7 @@ base_margin=3.5;
 // Base plate begin in x
 base_begin=-84;
 // Base plate end in x
-base_end=14;
+base_end=60;
 base_length=base_end - base_begin;
 // Base plate height below tape surface
 base_height=7;
@@ -292,7 +292,7 @@ base_anti_friction_ring=extrusion_width*3;
 // Add a reel holder to the base plate
 base_with_reel_holder = true;
 // Add base mounting screws (depends on other options)
-base_mount_screws=true;
+base_mount_screws=false;
 // Emboss the base plate to make space for mechanics
 emboss=2; 
 // Cross hole diameter (for punch-outs, optional reinforcment pins, screws etc.)
@@ -388,7 +388,7 @@ reel_washer=reel_axle+2*5;
 reel_holder_thickness=base_thickness-reel_wall;
 reel_washer_inner=cross_screw_diameter+2*wall;
 // Reel horizontal distance from the mounting extrusion
-reel_dist=10; // [0:1:50]
+reel_dist=68; // [0:1:50]
 // Reel distance from the spool
 reel_dist_spool=4; // [0:0.5:8]
 // Add connection to spool axle
