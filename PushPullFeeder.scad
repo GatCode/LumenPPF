@@ -318,7 +318,7 @@ spool_axle_diameter=8;
 spool_axle_groove_innner=spool_axle_diameter-wall;
 spool_axle_groove_outer=spool_axle_diameter+2*layer_height;
 // Cover tape spool position in x
-spool_axle_x=-86;
+spool_axle_x=-90;
 spool_axle_y=spool_outer_diameter/2+2;
 // Spool left side number spokes (set 0 to switch off)
 spool_spokes_left=0;
@@ -403,7 +403,7 @@ lever_axle_diameter=8;
 // Lever spring node size
 lever_node=3;
 // Lever axle position in x
-lever_axle_x=-48; 
+lever_axle_x=-38; 
 // Lever axle position in y
 lever_axle_y=29;  
 // To make the feeder compatible with various tape widths, the lever only takes up about half the tape width, so the nozzle adapter can actuate it when centered on the tape. This is the delta.
@@ -546,9 +546,9 @@ extrusion_mount_slot_outer=extrusion_mount_slot_inner
     +extrusion_mount_slot_thickness*2*tan(90-extrusion_mount_slot_angle); 
     
 // Handle grip diameter
-handle_diameter=24;
+handle_diameter=20;
 // Handle grip strength
-handle_strength=8;
+handle_strength=10;
 handle_lock_diameter=reel_axle;//extrusion_mount_slot_inner*2;
 // Length of handle
 handle_pull_length=82;
