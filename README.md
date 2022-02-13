@@ -1,4 +1,4 @@
-# PushPullFeeder
+# NOTE: THIS PROJECT IS CURRENTLY AN EXPERIMENTAL STATE!
 All 3d-Printed Tape&amp;Reel Feeder
 
 <img src="PushPullFeeder_Assembly.gif" />
