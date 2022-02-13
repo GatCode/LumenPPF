@@ -215,7 +215,7 @@ tape_inset_window_length=18;
 // Tape inset begin x
 tape_inset_begin=-74;
 // Tape inset end x
-tape_inset_end=52;
+tape_inset_end=42;
 // Tension for tape cover (ratio of tape thickness)
 tape_inset_cover_tension=0.2;
 // Radius of the tape on-ramp
@@ -227,7 +227,7 @@ tape_inset_slant=2;
 // Minimum thorn groove 
 thorn_min_groove=0.4;
 // Cover tape edge relative to the pick location
-cover_tape_edge=44.75;
+cover_tape_edge=34.75;
 // Tape reversal blocking thorn (set 0 to switch off)
 reversal_blocking_thorn_length=0.5;
 
@@ -256,11 +256,11 @@ label_thumb=8;
 // First bend angle
 tape_chute_angle=210;
 // Second (reverse) bend angle
-tape_chute_reverse_angle=110;
+tape_chute_reverse_angle=60;
 // First bend diameter (as measured on tape surface)
 tape_chute_diameter=60;
 // Second bend diameter (as measured on tape surface)
-tape_chute_reverse_diameter=52;
+tape_chute_reverse_diameter=110;
 // Angle how much the chute can pivot up (for easier insertion)
 tape_chute_pivot_angle=43;
 // Preview how it pivots up
@@ -281,7 +281,7 @@ base_margin=3.5;
 // Base plate begin in x
 base_begin=-84;
 // Base plate end in x
-base_end=60;
+base_end=50;
 base_length=base_end - base_begin;
 // Base plate height below tape surface
 base_height=7;
@@ -292,7 +292,7 @@ base_anti_friction_ring=extrusion_width*3;
 // Add a reel holder to the base plate
 base_with_reel_holder = true;
 // Add base mounting screws (depends on other options)
-base_mount_screws=false;
+base_mount_screws=true;
 // Emboss the base plate to make space for mechanics
 emboss=2; 
 // Cross hole diameter (for punch-outs, optional reinforcment pins, screws etc.)
@@ -379,16 +379,16 @@ blocking_spring_early=-0.15; // [-0.5:0.01:0.5]
 // Reel maximum diameter (178mm +/- 2mm by EIA 481)
 reel_diameter=180;
 // Reel axle diameter
-reel_axle=13;
+reel_axle=12.9;
 reel_wall=tape_reel_max_width_delta/2;
 reel_width=tape_width+2*reel_wall;
 // Reel holder strength
 reel_holder_strength=4+4*wall;
 reel_washer=reel_axle+2*5;
-reel_holder_thickness=base_thickness-reel_wall;
+reel_holder_thickness=base_thickness-reel_wall*(6/8);
 reel_washer_inner=cross_screw_diameter+2*wall;
 // Reel horizontal distance from the mounting extrusion
-reel_dist=68; // [0:1:50]
+reel_dist=62; // [0:1:50]
 // Reel distance from the spool
 reel_dist_spool=4; // [0:0.5:8]
 // Add connection to spool axle
@@ -516,7 +516,7 @@ extrusion_mount_h=20; // [20:20:60]
 extrusion_mount_edge_x=-50;     // in my setup, the nozzle tip can just about reach the table edge
                                 // but the camera is +30mm in Y, so plus extrusion = 50mm.
 // Extrusion mount top edge (from pick location)
-extrusion_mount_edge_y=-20;
+extrusion_mount_edge_y=-30;
 // Extrusion center position in x
 extrusion_mount_x=extrusion_mount_edge_x+extrusion_mount_w/2; 
 // Extrusion center position in y
@@ -546,9 +546,9 @@ extrusion_mount_slot_outer=extrusion_mount_slot_inner
     +extrusion_mount_slot_thickness*2*tan(90-extrusion_mount_slot_angle); 
     
 // Handle grip diameter
-handle_diameter=22;
+handle_diameter=24;
 // Handle grip strength
-handle_strength=6;
+handle_strength=8;
 handle_lock_diameter=reel_axle;//extrusion_mount_slot_inner*2;
 // Length of handle
 handle_pull_length=82;
