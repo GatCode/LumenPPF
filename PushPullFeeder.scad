@@ -410,7 +410,7 @@ lever_axle_y=29;
 lever_actuation_delta=1;
 lever_actuation_thickness=emboss+tape_width/2+lever_actuation_delta;
 // Leverage for the feed actuation
-lever_feed_leverage=32;
+lever_feed_leverage=26;
 // Angle of the feed lever in idle position.
 lever_feed_angle=100;
 // Leverage for the dog actuation
@@ -516,7 +516,7 @@ extrusion_mount_h=20; // [20:20:60]
 extrusion_mount_edge_x=0;     // in my setup, the nozzle tip can just about reach the table edge
                                 // but the camera is +30mm in Y, so plus extrusion = 50mm.
 // Extrusion mount top edge (from pick location)
-extrusion_mount_edge_y=-30;
+extrusion_mount_edge_y=-25;
 // Extrusion center position in x
 extrusion_mount_x=extrusion_mount_edge_x+extrusion_mount_w/2; 
 // Extrusion center position in y
