@@ -213,9 +213,9 @@ sprocket_margin=sprocket_gap+tape_min_margin;
 // Tape inset pick window length (make it longer than the inset to keep the end open)
 tape_inset_window_length=18;
 // Tape inset begin x
-tape_inset_begin=-74;
+tape_inset_begin=-104;
 // Tape inset end x
-tape_inset_end=42;
+tape_inset_end=52;
 // Tension for tape cover (ratio of tape thickness)
 tape_inset_cover_tension=0.2;
 // Radius of the tape on-ramp
@@ -227,7 +227,7 @@ tape_inset_slant=2;
 // Minimum thorn groove 
 thorn_min_groove=0.4;
 // Cover tape edge relative to the pick location
-cover_tape_edge=34.75;
+cover_tape_edge=42.75;
 // Tape reversal blocking thorn (set 0 to switch off)
 reversal_blocking_thorn_length=0.5;
 
@@ -254,13 +254,13 @@ label_thumb=8;
 /* [ Spent Tape Chute ] */
 
 // First bend angle
-tape_chute_angle=210;
+tape_chute_angle=180;
 // Second (reverse) bend angle
-tape_chute_reverse_angle=60;
+tape_chute_reverse_angle=20;
 // First bend diameter (as measured on tape surface)
-tape_chute_diameter=60;
+tape_chute_diameter=50;
 // Second bend diameter (as measured on tape surface)
-tape_chute_reverse_diameter=110;
+tape_chute_reverse_diameter=200;
 // Angle how much the chute can pivot up (for easier insertion)
 tape_chute_pivot_angle=43;
 // Preview how it pivots up
@@ -279,9 +279,9 @@ base_thickness=ceil(base_min_thickness+tape_reel_max_width_delta)
 // Margin all around the base plate
 base_margin=3.5;
 // Base plate begin in x
-base_begin=-84;
+base_begin=-114;
 // Base plate end in x
-base_end=50;
+base_end=60;
 base_length=base_end - base_begin;
 // Base plate height below tape surface
 base_height=7;
@@ -388,7 +388,7 @@ reel_washer=reel_axle+2*5;
 reel_holder_thickness=base_thickness-reel_wall*(6/8);
 reel_washer_inner=cross_screw_diameter+2*wall;
 // Reel horizontal distance from the mounting extrusion
-reel_dist=62; // [0:1:50]
+reel_dist=118; // [0:1:50]
 // Reel distance from the spool
 reel_dist_spool=4; // [0:0.5:8]
 // Add connection to spool axle
@@ -403,14 +403,14 @@ lever_axle_diameter=8;
 // Lever spring node size
 lever_node=3;
 // Lever axle position in x
-lever_axle_x=-38; 
+lever_axle_x=-50; 
 // Lever axle position in y
 lever_axle_y=29;  
 // To make the feeder compatible with various tape widths, the lever only takes up about half the tape width, so the nozzle adapter can actuate it when centered on the tape. This is the delta.
 lever_actuation_delta=1;
 lever_actuation_thickness=emboss+tape_width/2+lever_actuation_delta;
 // Leverage for the feed actuation
-lever_feed_leverage=26;
+lever_feed_leverage=32;
 // Angle of the feed lever in idle position.
 lever_feed_angle=100;
 // Leverage for the dog actuation
@@ -513,7 +513,7 @@ extrusion_mount_w=20; // [20:20:40]
 // Extrusion overall height
 extrusion_mount_h=20; // [20:20:60]
 // Extrusion mount front edge (from pick location)
-extrusion_mount_edge_x=-50;     // in my setup, the nozzle tip can just about reach the table edge
+extrusion_mount_edge_x=0;     // in my setup, the nozzle tip can just about reach the table edge
                                 // but the camera is +30mm in Y, so plus extrusion = 50mm.
 // Extrusion mount top edge (from pick location)
 extrusion_mount_edge_y=-30;
@@ -551,7 +551,7 @@ handle_diameter=20;
 handle_strength=10;
 handle_lock_diameter=reel_axle;//extrusion_mount_slot_inner*2;
 // Length of handle
-handle_pull_length=82;
+handle_pull_length=44;
 // Handle lock inner axle (set 0 to switch off)
 handle_lock_inner_axle=1;
 handle_lock_strength=handle_lock_diameter/2;
@@ -562,7 +562,7 @@ handle_lock_tension=0.7;
 // Squeeze-in tension of lock against the extrusion profile (includes taking up play)
 handle_lock_squeeze=0.4;
 // Handle lock angle from vertical 
-handle_lock_angle=22.5; // [10:0.01:35]
+handle_lock_angle=55.0; // [10:0.01:35]
 // Show the lock as released
 handle_lock_debug=false;
 // Distance of the lock from the extrusion
