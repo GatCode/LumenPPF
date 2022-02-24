@@ -1,9 +1,5 @@
 # LumenPPF
 
-
-
-
-
 <p align="center">
   <img width="600" src="assets/cad.png">
   <h3 align="center">LumenPnP optimized 3d-Printed Tape&Reel Feeder</h3>
@@ -34,6 +30,8 @@ This project is an advancement of [markmaker's PushPullFeeder](https://github.co
 Make sure you have installed [Fusion 360](https://www.autodesk.com/products/fusion-360/overview) and know the basics on how to use it.
 
 1. Open the `LumenPPF.f3z` file inside of Fusion 360.
+   
+   * Note: the usage of the `.step` file in the `STEP` folder is not recommended
 
 2. Open the `Change Parameters` option and adapt the feeder to your needs.
 
