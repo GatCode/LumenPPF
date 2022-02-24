@@ -5,7 +5,7 @@
 
 
 <p align="center">
-  <img width="500" src="assets/cad.png">
+  <img width="600" src="assets/cad.png">
   <h3 align="center">LumenPnP optimized 3d-Printed Tape&Reel Feeder</h3>
   <p align="center">
     <img alt="license" src="https://img.shields.io/badge/license-GPL-blue">
@@ -15,11 +15,13 @@
 
 ## About
 
-This project is an advancement of [markmaker's PushPullFeeder](https://github.com/markmaker/PushPullFeeder). Instead of OpenSCAD, this project uses a parametric approach in Autodesk Fusion 360. The main goal is to create a fully 3d-printed feeder for the [LumenPnP](https://github.com/index-machines/index).
+This project is an advancement of [markmaker's PushPullFeeder](https://github.com/markmaker/PushPullFeeder). Instead of OpenSCAD, this project uses a parametric approach in Autodesk Fusion 360. The main goal is to create a fully 3d-printed feeder for the [LumenPnP](https://github.com/index-machines/index), which fulfills the goals stated below.
 
 ## Goals
 
 * Fully 3d-printed
+
+* Printable on smaller printers (e.g. Prusa Mini)
 
 * Tape insert should be parameterized
 
