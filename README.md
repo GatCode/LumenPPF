@@ -37,7 +37,13 @@ Make sure you have installed [Fusion 360](https://www.autodesk.com/products/fusi
 
 2. Open the `Change Parameters` option and adapt the feeder to your needs.
 
-3. Print and enjoy 🎉
+3. Export the tape insert and the lever since the other parts usually stay the same (8mm version)
+
+4. Print all parts from the `STL` folder and the exported tape insert + lever
+
+5. Assemble the feeder
+
+6. Enjoy 🎉
 
 <img title="" src="assets/params.png" alt="" width="628"> 
 
