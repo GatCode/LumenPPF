@@ -47,7 +47,7 @@ Make sure you have installed [Fusion 360](https://www.autodesk.com/products/fusi
 
 ## TODO
 
-* Create a pull handle for the LumenPnP X-gantry
+* ~~Create a pull handle for the LumenPnP X-gantry~~
 
 * Adapt the project for other tape sizes than 8mm
 
